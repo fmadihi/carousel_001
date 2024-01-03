@@ -1,3 +1,20 @@
+// import Swiper JS
+import Swiper from 'swiper';
+// import Swiper styles
+import 'swiper/css';
+
+import { Navigation, Pagination } from 'swiper/modules';
+// import Swiper and modules styles
+
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+
+// import Swiper bundle with all modules installed
+import Swiper from 'swiper/bundle';
+
+// import styles bundle
+import 'swiper/css/bundle';
+
 var swiper = new Swiper(".swiper", {
     effect: "coverflow",
     grabCursor: true,
@@ -23,16 +40,16 @@ var swiper = new Swiper(".swiper", {
     },
     breakpoints: {
         460: {
-            slidesPerview: 3
+            slidesPerView: 3
         },
         768: {
-            slidesPerview: 3
+            slidesPerView: 3
         },
         1024: {
-            slidesPerview: 3
+            slidesPerView: 3
         },
         1600: {
-            slidesPerview: 3.6
+            slidesPerView: 3.6
         }
     }
 });
