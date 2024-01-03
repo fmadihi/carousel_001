@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    position: relative;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+main {
+    position: relative;
+    min-height: 100vh;
+    column-gap: 3rem;
+    padding-block: min(20vh, 3rem);
+    padding-inline: 2.3em;
+    align-items: center;
+    justify-content: center;
+    background: #461356;
+    overflow: hidden;
+}
+
+@media screen and (min-width:960px) {
+    main {
+        display: flex;
+        padding-inline: 0;
+    }
+    main .content {
+        width: 40%;
+        padding-left: 5em;
+        margin-bottom: 0;
+    }
+    .swiper-container{
+        width: 60%;
+        right: -60px;
+    }
+}
+
+main .content {
+    width: 100%;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 3em;
+}
+
+
+main h2{
+    letter-spacing: 0.8px;
+    font-weight: 700;
+    font-size: 2.8rem;
+    line-height: 1.2;
+}
+main p{
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-inline: auto;
+    margin-top: 10px;
+}
+main .counter{
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    margin: 2.5em 0 2em 0;
+    gap: 2em;
+}
+main .btn i{
+    margin-left: 15px;
+}
+main .btn:hover{
+    background-color: #ae0a53;
+}
+.swiper-container{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    right: 30px;
+    margin: 0 auto;
+}
+.swiper{
+    position: relative;
+    width: 100%;
+    z-index: 2;
+    /*overflow: hidden;*/
+}
+/*
+.swiper-wrapper{
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+}*/
+.swiper-slide{
+    width: 10rem;
+    height: 24rem;
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    position: relative;
+    border-radius: 12px;
+    box-shadow: -1px 5px 15px #000001;
+    text-align: center;
+    opacity: 0.4;
+    transition: opacity 0.4s ease-in;
+    background: url(./09.png) no-repeat;
+    background-size: cover;
+}/*
+.selection{
+    position: relative;
+    text-align: center;
+    margin-top: 10px;
+}
+.selection div{
+    width: 40px;
+    height: 3px;
+    background-color: white;
+    display: inline-block;
+}*/
